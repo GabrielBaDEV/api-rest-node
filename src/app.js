@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
     res.send('Curso de Node JS')
 })
 
-app.get('/selecoes', (req, res) =>{
-    res.send(selecoes)
+app.get('/selecoes', (req, res) => {
+    res.status(200).send(selecoes)
 })
 
 export default app // exportando a constante app que é uma instacia do express
